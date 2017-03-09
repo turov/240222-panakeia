@@ -45,6 +45,7 @@ a {
 .navigation {
     display: flex;
     flex-direction: row;
+    padding-bottom: 32px;
 }
 
 .navigation-list {
@@ -55,17 +56,17 @@ a {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-    width: 650px;
-}
-
-.navigation-item {
-    margin-right: 30px;
+    width: 700px;
+    padding-top: 35px;
+    padding-left: 79px;
 }
 
 .logo {
     width: 170px;
     cursor: pointer;
     margin-right: 270px;
+    padding-top: 30px;
+    padding-left: 40px;
 }
 
 .logo-main {
@@ -78,8 +79,8 @@ a {
 
 .logo-description {
     display: inline-block;
-    line-height: 36px;
-    font-size: 16px;
+    line-height: 18px;
+    font-size: 18px;
     color: #dd4b2b;
     font-weight: 500;
 }
@@ -90,6 +91,15 @@ a {
     color: #31353e;
     font-weight: 500;
     cursor: pointer;
+    margin-right: 4px;
+    display: block;
+    padding: 13px 20px;
+}
+
+.navigation-item a:hover {
+    background: #dd4b2b;
+    border-radius: 25px;
+    color: #ffffff;
 }
 
 .promo {
@@ -108,8 +118,9 @@ a {
     font-weight: 400;
     color: #ffffff;
     display: block;
-    max-width: 709px;
+    max-width: 872px;
     margin: 0 auto;
+    padding-top: 477px;
 }
 
 .promo-info {
@@ -118,8 +129,62 @@ a {
     font-weight: 700;
     color: #ffffff;
     display: block;
-    max-width: 300px;
+    max-width: 437px;
     margin: 0 auto;
+    padding-top: 4px;
 }
 
+.promo-features {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    width: 1170px;
+    padding-top: 117px;
+    justify-content: space-between;
+    margin: 0 13px;
+}
+
+.promo-features article {
+    width: 371px;
+}
+
+.promo-features img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+.promo-features h3 {
+    font-size: 30px;
+    line-height: 3px;
+    font-weight: 700;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.promo-features p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    background: #ffffff;
+    font-size: 18px;
+    color: #dd4b2b;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #dd4b2b;
+    color: #ffffff;
+}
 
