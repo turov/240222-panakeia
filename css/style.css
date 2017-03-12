@@ -30,22 +30,23 @@ a {
     text-decoration: none;
 }
 
+
 .header {
     background-color: #edeff1;
+    width: 100%;
 }
 
 .header .container {
     display: flex;
     flex-direction: row;
-    margin: 0 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 .navigation {
     display: flex;
     flex-direction: row;
-    padding-bottom: 32px;
+    padding-bottom: 47px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 .navigation-list {
@@ -66,7 +67,6 @@ a {
     cursor: pointer;
     margin-right: 270px;
     padding-top: 30px;
-    padding-left: 40px;
 }
 
 .logo-main {
@@ -103,13 +103,15 @@ a {
 }
 
 .promo {
-    height: 1322px;
+    min-height: 1322px;
     box-sizing: border-box;
     background: linear-gradient(
             to  bottom,
             rgba(0,0,0, 0),
             rgba(0,0,0, 0.8) 50%
     ),#090706 url("../img/background.jpg") no-repeat center top;
+    background-size: cover;
+    padding-bottom: 25px;
 }
 
 .promo h1 {
@@ -201,16 +203,17 @@ a {
 
 .news {
     background: #edeff1;
+    padding-top: 77px;
+    padding-bottom: 106px;
 }
 
 .news h2 {
     line-height: 30px;
     font-size: 30px;
     font-weight: 700;
-    padding-top: 77px;
-    padding-bottom: 81px;
-    text-align: center;
     margin: 0;
+    margin-bottom: 81px;
+    text-align: center;
 }
 
 .news-list {
@@ -222,6 +225,11 @@ a {
 
 .news-item {
     width: 371px;
+}
+
+.news-item img {
+    display: block;
+    border-radius: 6px;
 }
 
 .news-item-left {
@@ -252,7 +260,6 @@ a {
 }
 
 .news-item .btn {
-    margin-bottom: 106px;
     padding: 15px 0;
 }
 
@@ -264,7 +271,11 @@ a {
             rgba(0,0,0, 0),
             rgba(0,0,0, 0.4) 50%
     ),#090706 url("../img/promopic1.jpg") no-repeat center top;
-    height: 377px;
+    min-height: 377px;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 89px;
+    padding-bottom: 85px;
 }
 
 .newsletter h2 {
@@ -272,7 +283,6 @@ a {
     line-height: 30px;
     font-size: 30px;
     font-weight: 700;
-    padding-top: 89px;
     padding-bottom: 10px;
     text-align: center;
     margin: 0;
@@ -291,7 +301,6 @@ a {
 .newsletter form {
     position: relative;
     padding: 30px 0;
-    margin-bottom: 85px;
 }
 
 .newsletter input {
