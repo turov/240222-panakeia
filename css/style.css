@@ -30,19 +30,28 @@ a {
     text-decoration: none;
 }
 
-
 .header {
     background-color: #edeff1;
     width: 100%;
 }
 
 .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 47px;
     padding-top: 15px;
@@ -50,12 +59,18 @@ a {
 }
 
 .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 700px;
     padding-top: 35px;
@@ -105,11 +120,16 @@ a {
 .promo {
     min-height: 1322px;
     box-sizing: border-box;
+    background: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.8) 50%
+    ), #090706 url("../img/background.jpg") no-repeat center top;
     background: linear-gradient(
-            to  bottom,
-            rgba(0,0,0, 0),
-            rgba(0,0,0, 0.8) 50%
-    ),#090706 url("../img/background.jpg") no-repeat center top;
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.8) 50%
+    ), #090706 url("../img/background.jpg") no-repeat center top;
     background-size: cover;
     padding-bottom: 25px;
 }
@@ -137,11 +157,18 @@ a {
 }
 
 .promo-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     color: #ffffff;
     width: 1170px;
     padding-top: 117px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 13px;
 }
@@ -161,8 +188,6 @@ a {
     border-color: #dd4b2b;
     cursor: pointer;
 }
-
-
 
 .promo-features h3 {
     font-size: 30px;
@@ -217,9 +242,16 @@ a {
 }
 
 .news-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 1200px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -266,11 +298,16 @@ a {
 /* NEWSLETTER */
 
 .newsletter {
+    background: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.4) 50%
+    ), #090706 url("../img/promopic1.jpg") no-repeat center top;
     background: linear-gradient(
-            to  bottom,
-            rgba(0,0,0, 0),
-            rgba(0,0,0, 0.4) 50%
-    ),#090706 url("../img/promopic1.jpg") no-repeat center top;
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.4) 50%
+    ), #090706 url("../img/promopic1.jpg") no-repeat center top;
     min-height: 377px;
     background-size: cover;
     box-sizing: border-box;
@@ -298,6 +335,7 @@ a {
     width: 580px;
     margin-bottom: 10px;
 }
+
 .newsletter form {
     position: relative;
     padding: 30px 0;
@@ -312,7 +350,7 @@ a {
     text-align: left;
     border-radius: 25px;
     opacity: 0.5;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 0 210px 0 20px;
     vertical-align: top;
     margin-left: 347px;
@@ -342,7 +380,12 @@ a {
 /* PRODUCTS */
 
 .product-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 1200px;
     margin-bottom: 52px;
@@ -351,6 +394,7 @@ a {
 .product-top-about {
     width: 585px;
     padding-left: 16px;
+    padding-top: 114px;
 }
 
 .product-top img {
@@ -363,7 +407,6 @@ a {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
-    padding-top: 114px;
     padding-bottom: 10px;
 
 }
@@ -389,7 +432,12 @@ a {
 }
 
 .product-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     width: 1200px;
     margin-bottom: 52px;
@@ -400,7 +448,7 @@ a {
     padding-right: 30px;
 }
 
-.product-bottom h2{
+.product-bottom h2 {
     padding-top: 52px;
 }
 
@@ -411,15 +459,21 @@ a {
 }
 
 .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 1200px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    padding: 60px 0;
 }
 
 .custom-list {
     list-style: none;
-    margin: 60px 0;
 }
 
 .custom-list a {
@@ -437,12 +491,22 @@ a {
 /* COPYRIGHT */
 
 .copyright {
+    background: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.7) 50%
+    ), #090706 url("../img/promopic1.jpg") no-repeat center top;
     background: linear-gradient(
-            to  bottom,
-            rgba(0,0,0, 0),
-            rgba(0,0,0, 0.7) 50%
-    ),#090706 url("../img/promopic1.jpg") no-repeat center top;
-    height: 377px;
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.7) 50%
+    ), #090706 url("../img/promopic1.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 377px;
+}
+
+.copyright .container {
+    padding-top: 86px;
 }
 
 .copyright p {
@@ -452,7 +516,6 @@ a {
     text-align: center;
     color: #ffffff;
     margin: 0;
-    padding-top: 86px;
 }
 
 .copyright span {
